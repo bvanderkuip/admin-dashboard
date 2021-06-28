@@ -1,7 +1,12 @@
 import { createStore } from 'vuex'
 
 export default createStore({
-  state: {
+  state() {
+    return {
+      sideBarConfig: {
+        collapsed: false
+      },
+    };
   },
   mutations: {
   },
